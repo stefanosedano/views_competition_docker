@@ -21,8 +21,6 @@ ENV PATH="/.venv/bin:$PATH"
 
 WORKDIR "/views_competition"
 
-RUN python3 -m venv $VIRTUAL_ENV
-
 RUN pip install --editable .
 RUN pip install click
 RUN pip install -r requirements.txt
