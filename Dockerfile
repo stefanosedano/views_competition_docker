@@ -13,5 +13,4 @@ RUN apt-get -y install libgdal-dev
 RUN export CPLUS_INCLUDE_PATH=/usr/include/gdal
 RUN export C_INCLUDE_PATH=/usr/include/gdal
 RUN git clone https://github.com/stefanosedano/views_competition.git
-RUN pip install --editable .
 RUN pip install -r requirements.txt
