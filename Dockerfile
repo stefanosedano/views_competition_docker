@@ -22,7 +22,6 @@ ENV PATH="/.venv/bin:$PATH"
 WORKDIR "/views_competition"
 
 RUN pip install --editable .
-RUN pip install click
 RUN pip install -r requirements.txt
 
 
