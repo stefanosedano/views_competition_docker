@@ -15,14 +15,9 @@ RUN export C_INCLUDE_PATH=/usr/include/gdal
 
 RUN git clone https://github.com/stefanosedano/views_competition.git
 
-
-RUN python -m venv ./.venv
-ENV PATH="/.venv/bin:$PATH"
-
-WORKDIR "/views_competition"
-
 RUN pip install --editable .
 RUN pip install -r requirements.txt
+
 
 
 
