@@ -12,8 +12,7 @@ RUN pip install setuptools==57.5.0
 
 RUN git clone https://github.com/stefanosedano/views_competition.git
 WORKDIR "/views_competition"
-#RUN pip install --editable .
-RUN pip install -r requirements.txt
+COPY ./run.sh /views_competition/run.sh
 
 
 
